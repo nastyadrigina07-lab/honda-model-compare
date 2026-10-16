@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda — обзор моделей 2026</title>
+    <style>
+        /* ===== БАЗА ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(180deg, #0a1a2f 0%, #1a3a5c 100%);
+            color: #e8f4f8;
+            line-height: 1.6;
+        }
+
+        /* ===== ШАПКА ===== */
+        header {
+            background: linear-gradient(135deg, #0a1a2f 0%, #1a3a5c 50%, #2a5a8c 100%);
+            padding: 30px 20px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            color: #7ec8e3;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(126, 200, 227, 0.6);
+            margin-bottom: 15px;
+        }
+
+        /* ===== НАВИГАЦИЯ ===== */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #b8e0f0;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 1px solid #4a9bd9;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: #4a9bd9;
+            color: #0a1a2f;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(74, 155, 217, 0.5);
+        }
+
+        /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            background: rgba(26, 58, 92, 0.4);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(74, 155, 217, 0.3);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #7ec8e3;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #4a9bd9;
+            text-shadow: 0 0 10px rgba(126, 200, 227, 0.4);
+        }
+
+        h3 {
+            color: #b8e0f0;
+            font-size: 1.4em;
+            margin: 20px 0 15px;
+        }
+
+        h4 {
+            color: #4a9bd9;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #d0e8f5;
+        }
+
+        /* ===== ТАБЛИЦА ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(10, 26, 47, 0.6);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        caption {
+            caption-side: top;
+            padding: 15px;
+            font-size: 1.2em;
+            color: #7ec8e3;
+            font-weight: bold;
+        }
+
+        th {
+            background: linear-gradient(135deg, #1a3a5c, #2a5a8c);
+            color: #b8e0f0;
+            padding: 15px;
+            text-align: left;
+            font-size: 1em;
+            border-bottom: 2px solid #4a9bd9;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(74, 155, 217, 0.2);
+            color: #d0e8f5;
+        }
+
+        tbody tr {
+            transition: background 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background: rgba(74, 155, 217, 0.15);
+        }
+
+        tbody tr:nth-child(even) {
+            background: rgba(26, 58, 92, 0.3);
+        }
+
+        tfoot td {
+            background: linear-gradient(135deg, #1a3a5c, #2a5a8c);
+            color: #7ec8e3;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        mark {
+            background: linear-gradient(135deg, #4a9bd9, #7ec8e3);
+            color: #0a1a2f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* ===== FIGURE ===== */
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        figure img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 60px rgba(74, 155, 217, 0.6);
+        }
+
+        figcaption {
+            margin-top: 12px;
+            color: #7ec8e3;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+
+        /* ===== ASIDE ===== */
+        aside {
+            background: linear-gradient(135deg, rgba(74, 155, 217, 0.2), rgba(126, 200, 227, 0.1));
+            border-left: 4px solid #7ec8e3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 15px 15px 0;
+        }
+
+        aside h4 {
+            color: #7ec8e3;
+        }
+
+        /* ===== BLOCKQUOTE ===== */
+        blockquote {
+            background: rgba(10, 26, 47, 0.6);
+            border-left: 4px solid #4a9bd9;
+            padding: 20px 25px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #b8e0f0;
+            border-radius: 0 15px 15px 0;
+            position: relative;
+        }
+
+        blockquote::before {
+            content: '"';
+            font-size: 4em;
+            color: #4a9bd9;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            opacity: 0.3;
+        }
+
+        /* ===== DETAILS / SUMMARY ===== */
+        details {
+            background: rgba(10, 26, 47, 0.5);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border: 1px solid rgba(74, 155, 217, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        details:hover {
+            border-color: #4a9bd9;
+            box-shadow: 0 5px 20px rgba(74, 155, 217, 0.2);
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #7ec8e3;
+            font-size: 1.05em;
+            padding: 5px 0;
+            list-style: none;
+            transition: color 0.3s ease;
+        }
+
+        summary:hover {
+            color: #b8e0f0;
+        }
+
+        summary::before {
+            content: '▶ ';
+            color: #4a9bd9;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        details ul {
+            margin: 15px 0 5px 25px;
+        }
+
+        details li {
+            margin-bottom: 8px;
+            color: #d0e8f5;
+        }
+
+        /* ===== PROGRESS ===== */
+        progress {
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        progress::-webkit-progress-bar {
+            background: rgba(10, 26, 47, 0.6);
+            border-radius: 10px;
+        }
+
+        progress::-webkit-progress-value {
+            background: linear-gradient(90deg, #4a9bd9, #7ec8e3);
+            border-radius: 10px;
+        }
+
+        progress::-moz-progress-bar {
+            background: linear-gradient(90deg, #4a9bd9, #7ec8e3);
+            border-radius: 10px;
+        }
+
+        /* ===== КНОПКИ ===== */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1a3a5c, #4a9bd9);
+            color: #ffffff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(74, 155, 217, 0.4);
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #4a9bd9, #7ec8e3);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(126, 200, 227, 0.6);
+            color: #0a1a2f;
+        }
+
+        /* ===== ФОРМА ===== */
+        form {
+            background: rgba(10, 26, 47, 0.6);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(74, 155, 217, 0.3);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            color: #b8e0f0;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-top: 6px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid #4a9bd9;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 1em;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #7ec8e3;
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 20px rgba(126, 200, 227, 0.4);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(184, 224, 240, 0.5);
+        }
+
+        /* ===== ГАЛЕРЕЯ ===== */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .gallery .card {
+            background: rgba(10, 26, 47, 0.6);
+            border-radius: 15px;
+            padding: 15px;
+            border: 1px solid rgba(74, 155, 217, 0.3);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .gallery .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(74, 155, 217, 0.5);
+            border-color: #7ec8e3;
+        }
+/* ===== АНИМИРОВАННАЯ ДОРОГА ===== */
+.road {
+    position: relative;
+    height: 80px;
+    background: linear-gradient(180deg, #0a1a2f 0%, #14263d 100%);
+    overflow: hidden;
+    border-top: 2px solid #4a9bd9;
+    border-bottom: 2px solid #4a9bd9;
+}
+
+/* Пунктирная линия по центру дороги */
+.road-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200%;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        #7ec8e3 0px,
+        #7ec8e3 40px,
+        transparent 40px,
+        transparent 80px
+    );
+    transform: translateY(-50%);
+    animation: roadMove 2s linear infinite;
+}
+
+@keyframes roadMove {
+    from { transform: translate(-80px, -50%); }
+    to   { transform: translate(0, -50%); }
+}
+
+.car {
+    position: absolute;
+    bottom: 10px;
+    font-size: 5em;              /* было 3em, стало 5em */
+    animation: drive 20s ease-in-out infinite;
+    filter: drop-shadow(0 5px 15px rgba(126, 200, 227, 0.7));
+}
+
+@keyframes drive {
+    0%   { left: -15%; transform: scaleX(-1); }
+    45%  { left: 90%;  transform: scaleX(-1); }
+    50%  { left: 90%;  transform: scaleX(1); }
+    95%  { left: -15%; transform: scaleX(1); }
+    100% { left: -15%; transform: scaleX(-1); }
+}
+/* ===== ПОМОЩНИК НАСТЮШКА ===== */
+.helper {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Скрываем чекбокс */
+.helper-toggle {
+    display: none;
+}
+
+/* Круглая кнопка-аватарка */
+.helper-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4a9bd9, #7ec8e3);
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(74, 155, 217, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
+    animation: helperFloat 3s ease-in-out infinite;
+    overflow: hidden;        /* ← важно: обрезает фото по кругу */
+}
+
+/* Фото внутри кнопки */
+.helper-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* ← важно: заполняет круг без искажений */
+    border-radius: 50%;
+}
+
+.helper-avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(126, 200, 227, 0.9);
+}
+
+/* Пульсирующий кружок вокруг аватарки */
+.helper-ping {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 3px solid #7ec8e3;
+    animation: ping 2s ease-out infinite;
+    pointer-events: none;
+}
+
+@keyframes ping {
+    0%   { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+
+@keyframes helperFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+}
+
+/* Окно чата */
+.helper-window {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    width: 340px;
+    background: linear-gradient(135deg, #0a1a2f, #1a3a5c);
+    border: 2px solid #4a9bd9;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: bottom right;
+}
+
+/* Когда чекбокс включён — показываем окно */
+.helper-toggle:checked ~ .helper-window {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+/* Прячем аватарку, когда окно открыто */
+.helper-toggle:checked ~ .helper-avatar {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+}
+
+/* Шапка окна */
+.helper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #1a3a5c, #2a5a8c);
+    border-bottom: 2px solid #4a9bd9;
+}
+
+.helper-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.helper-header-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #4a9bd9;
+}
+
+/* Фото внутри аватарки в шапке */
+.helper-header-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.helper-name {
+    color: #7ec8e3;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.helper-status {
+    color: #4ade80;
+    font-size: 0.85em;
+}
+
+.helper-close {
+    cursor: pointer;
+    color: #b8e0f0;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.helper-close:hover {
+    background: rgba(74, 155, 217, 0.3);
+    color: #fff;
+}
+
+/* Тело чата */
+.helper-body {
+     padding: 20px;
+    max-height: 450px;   /* стало 450px — влезет больше сообщений */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.helper-message {
+    background: rgba(74, 155, 217, 0.15);
+    border-left: 3px solid #4a9bd9;
+    padding: 12px 15px;
+    border-radius: 12px 12px 12px 4px;
+    color: #d0e8f5;
+    font-size: 0.95em;
+    line-height: 1.4;
+    animation: messageIn 0.5s ease backwards;
+}
+
+.helper-message:nth-child(1) { animation-delay: 0.2s; }
+.helper-message:nth-child(2) { animation-delay: 0.5s; }
+.helper-message:nth-child(3) { animation-delay: 0.8s; }
+
+@keyframes messageIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Кнопки-варианты */
+.helper-message-options {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.helper-message-options a {
+    display: inline-block;
+    background: linear-gradient(135deg, #1a3a5c, #4a9bd9);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.helper-message-options a:hover {
+    background: linear-gradient(135deg, #4a9bd9, #7ec8e3);
+    color: #0a1a2f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 155, 217, 0.5);
+}
+
+/* Стили для сообщений-карточек моделей */
+.helper-message-model {
+    background: rgba(74, 155, 217, 0.12);
+    border-left: 3px solid #7ec8e3;
+    font-size: 0.9em;
+    padding: 10px 14px;
+}
+
+.helper-message-model strong {
+    color: #7ec8e3;
+}
+
+/* Финальная подсказка */
+.helper-message-footer-note {
+    background: rgba(74, 222, 128, 0.1);
+    border-left: 3px solid #4ade80;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Скроллбар внутри чата — посимпатичнее */
+.helper-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.helper-body::-webkit-scrollbar-track {
+    background: rgba(10, 26, 47, 0.4);
+}
+
+.helper-body::-webkit-scrollbar-thumb {
+    background: #4a9bd9;
+    border-radius: 3px;
+}
+
+.helper-body::-webkit-scrollbar-thumb:hover {
+    background: #7ec8e3;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 500px) {
+    .helper-window {
+        width: calc(100vw - 30px);
+        right: -10px;
+    }
+    .helper-avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 1.7em;
+    }
+}
+        /* ===== ПОДВАЛ ===== */
+        footer {
+            background: linear-gradient(135deg, #0a1a2f, #1a3a5c);
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid #4a9bd9;
+            color: #b8e0f0;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #7ec8e3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #b8e0f0;
+        }
+
+        /* ===== АНИМАЦИЯ ПОЯВЛЕНИЯ ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
+
+        /* ===== АДАПТИВ ===== */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.5em; }
+            h2 { font-size: 1.4em; }
+            section { padding: 20px; }
+            th, td { padding: 8px; font-size: 0.9em; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= ШАПКА ================= -->
+    <header>
+        <h1>HONDA — обзор моделей 2026</h1>
+        <nav>
+            <a href="#intro">Главная</a>
+            <a href="#table">Сравнение</a>
+            <a href="#accord">Accord</a>
+            <a href="#crv">CR-V</a>
+            <a href="#civic">Civic</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+<!-- ================= АНИМИРОВАННАЯ ДОРОГА ================= -->
+<div class="road">
+    <div class="road-line"></div>
+    <div class="car">🏎️</div>
+</div>
+    <main>
+
+        <!-- ================= ВВЕДЕНИЕ ================= -->
+        <section id="intro">
+            <h2>О марке Honda</h2>
+            <p>
+                <strong>Honda Motor Co., Ltd.</strong> — японская компания, основанная
+                <time datetime="1948">в 1948 году</time> Соитиро Хондой. Сегодня Honda
+                известна своими надёжными двигателями, гибридными технологиями
+                и инновационными системами безопасности.
+            </p>
+            <p>
+                В этом обзоре мы сравним три самые популярные модели:
+                <mark>Honda Accord</mark>, <mark>Honda CR-V</mark> и
+                <mark>Honda Civic</mark> — седан, кроссовер и компактный автомобиль.
+            </p>
+
+            <aside>
+                <h4>💡 Интересный факт</h4>
+                <p>
+                    Honda — крупнейший в мире производитель двигателей внутреннего сгорания.
+                    Она выпускает не только автомобили, но и мотоциклы, лодочные моторы,
+                    генераторы и даже самолёты (HondaJet).
+                </p>
+            </aside>
+        </section>
+
+        <!-- ================= ТАБЛИЦА ================= -->
+        <section id="table">
+            <h2>Сравнительная таблица характеристик</h2>
+
+            <table>
+                <caption>Honda Accord vs CR-V vs Civic</caption>
+
+                <thead>
+                    <tr>
+                        <th>Характеристика</th>
+                        <th>Honda Accord</th>
+                        <th>Honda CR-V</th>
+                        <th>Honda Civic</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Тип двигателя</td>
+                        <td>Гибрид 2.0L + электромотор</td>
+                        <td>Гибрид 2.0L e:HEV</td>
+                        <td>Гибрид 2.0L e:HEV</td>
+                    </tr>
+                    <tr>
+                        <td>Расход топлива</td>
+                        <td><mark>4.3 л/100км</mark></td>
+                        <td>6.7 л/100км</td>
+                        <td>4.2–6.2 л/100км</td>
+                    </tr>
+                    <tr>
+                        <td>Тип КПП</td>
+                        <td>Автоматическая (e-CVT)</td>
+                        <td>Автоматическая (e-CVT)</td>
+                        <td>Автоматическая (e-CVT)</td>
+                    </tr>
+                    <tr>
+                        <td>Количество передач</td>
+                        <td>1 (бесступенчатая)</td>
+                        <td>1 (бесступенчатая)</td>
+                        <td>1 (бесступенчатая)</td>
+                    </tr>
+                    <tr>
+                        <td>Габариты (Д×Ш×В)</td>
+                        <td>4975×1862×1449 мм</td>
+                        <td>4706×1866×1684 мм</td>
+                        <td>4560×1802×1408 мм</td>
+                    </tr>
+                    <tr>
+                        <td>Объём багажника</td>
+                        <td>570 л</td>
+                        <td><mark>579–1070 л</mark></td>
+                        <td>410–820 л</td>
+                    </tr>
+                    <tr>
+                        <td>Разгон 0–100 км/ч</td>
+                        <td><mark>~7.5 сек</mark></td>
+                        <td>9.3 сек</td>
+                        <td>8.1 сек</td>
+                    </tr>
+                    <tr>
+                        <td>Максимальная скорость</td>
+                        <td>~200 км/ч</td>
+                        <td>185 км/ч</td>
+                        <td>180 км/ч</td>
+                    </tr>
+                    <tr>
+                        <td>Рейтинг Euro NCAP</td>
+                        <td>5 звёзд</td>
+                        <td>5 звёзд</td>
+                        <td>5 звёзд</td>
+                    </tr>
+                    <tr>
+                        <td>Тормозная система</td>
+                        <td>Дисковые (вентилируемые спереди)</td>
+                        <td>Дисковые</td>
+                        <td>Дисковые</td>
+                    </tr>
+                    <tr>
+                        <td>Wi-Fi / Bluetooth</td>
+                        <td>Есть / Есть</td>
+                        <td>Есть / Есть</td>
+                        <td>Есть / Есть</td>
+                    </tr>
+                    <tr>
+                        <td>Гарантия</td>
+                        <td>5 лет</td>
+                        <td>5 лет</td>
+                        <td>5 лет</td>
+                    </tr>
+                    <tr>
+                        <td>Начальная цена</td>
+                        <td>~$28,000</td>
+                        <td>~$30,000</td>
+                        <td><mark>~$24,000</mark></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td><strong>Вывод</strong></td>
+                        <td colspan="3">
+                            <mark>Honda Accord</mark> — самый быстрый и экономичный седан.
+                            <mark>Honda CR-V</mark> — самый вместительный, идеален для семьи.
+                            <mark>Honda Civic</mark> — самый доступный, отличный выбор для города.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <details>
+                <summary>🛡️ Системы безопасности Honda Sensing (нажми, чтобы раскрыть)</summary>
+                <ul>
+                    <li><strong>ABS</strong> — антиблокировочная система тормозов</li>
+                    <li><strong>ESP</strong> — система курсовой устойчивости</li>
+                    <li><strong>CMBS</strong> — система предотвращения столкновений</li>
+                    <li><strong>LKAS</strong> — удержание в полосе движения</li>
+                    <li><strong>ACC</strong> — адаптивный круиз-контроль</li>
+                    <li><strong>RDM</strong> — система контроля ухода с полосы</li>
+                    <li>Подушки безопасности: фронтальные, боковые, шторки</li>
+                </ul>
+            </details>
+        </section>
+
+        <!-- ================= ACCORD ================= -->
+        <section id="accord">
+            <h2>Honda Accord 2026</h2>
+
+            <figure>
+                <img src="accord.jpg" alt="Honda Accord 2026" title="Honda Accord" width="600">
+                <figcaption>Honda Accord 2026 — флагманский седан бизнес-класса</figcaption>
+            </figure>
+
+            <p>
+                Accord — это <strong>флагманский седан</strong> Honda. Одиннадцатое поколение
+                получило гибридную силовую установку, современный дизайн и богатое оснащение.
+                Модель выпускается с <time datetime="2023">2023 года</time>.
+            </p>
+
+            <h3>Безопасность Euro NCAP</h3>
+            <p>Общая оценка: <progress value="95" max="100"></progress> 95%</p>
+            <p>Защита взрослых: <progress value="90" max="100"></progress> 90%</p>
+            <p>Защита детей: <progress value="88" max="100"></progress> 88%</p>
+
+            <aside>
+                <h4>💡 Интересный факт</h4>
+                <p>
+                    Honda Accord входит в топ-10 самых продаваемых автомобилей в США
+                    на протяжении более 30 лет. За всё время продано свыше 18 миллионов
+                    экземпляров по всему миру.
+                </p>
+            </aside>
+
+            <blockquote>
+                <p>
+                    Accord — это автомобиль, который делает всё правильно.
+                    Он не самый яркий и не самый быстрый, но в нём нет ни одного
+                    слабого места — идеальный баланс комфорта, экономичности и надёжности.
+                </p>
+                <footer>— <cite>Car and Driver</cite></footer>
+            </blockquote>
+
+            <details>
+                <summary>📋 Полные технические характеристики</summary>
+                <ul>
+                    <li>Двигатель: 2.0L гибрид + электромотор</li>
+                    <li>Мощность: 204 л.с.</li>
+                    <li>Расход: 4.3 л/100км (город)</li>
+                    <li>Разгон 0–100: 7.5 сек</li>
+                    <li>Максимальная скорость: 200 км/ч</li>
+                    <li>Багажник: 570 л</li>
+                </ul>
+            </details>
+        </section>
+
+        <!-- ================= CR-V ================= -->
+        <section id="crv">
+            <h2>Honda CR-V 2026</h2>
+
+            <figure>
+                <img src="crv.jpg" alt="Honda CR-V 2026" title="Honda CR-V" width="600">
+                <figcaption>Honda CR-V 2026 — семейный кроссовер</figcaption>
+            </figure>
+
+            <p>
+                CR-V — <strong>самый продаваемый кроссовер</strong> Honda. Шестое поколение
+                стало просторнее, экономичнее и технологичнее. Модель выпускается
+                с <time datetime="2022">2022 года</time>.
+            </p>
+
+            <h3>Безопасность Euro NCAP</h3>
+            <p>Общая оценка: <progress value="93" max="100"></progress> 93%</p>
+            <p>Защита взрослых: <progress value="88" max="100"></progress> 88%</p>
+            <p>Защита детей: <progress value="85" max="100"></progress> 85%</p>
+
+            <aside>
+                <h4>💡 Интересный факт</h4>
+                <p>
+                    CR-V расшифровывается как <em>Comfortable Runabout Vehicle</em> —
+                    «комфортный автомобиль для поездок». С 1995 года продано более
+                    13 миллионов экземпляров по всему миру.
+                </p>
+            </aside>
+
+            <blockquote>
+                <p>
+                    CR-V остаётся эталоном семейного кроссовера: практичный,
+                    экономичный, надёжный. Если бы все автомобили были такими,
+                    мир стал бы скучнее — но и лучше.
+                </p>
+                <footer>— <cite>MotorTrend</cite></footer>
+            </blockquote>
+
+            <details>
+                <summary>📋 Полные технические характеристики</summary>
+                <ul>
+                    <li>Двигатель: 2.0L гибрид e:HEV</li>
+                    <li>Мощность: 204 л.с.</li>
+                    <li>Расход: 6.7 л/100км (смешанный)</li>
+                    <li>Разгон 0–100: 9.3 сек</li>
+                    <li>Максимальная скорость: 185 км/ч</li>
+                    <li>Багажник: 579–1070 л</li>
+                </ul>
+            </details>
+        </section>
+
+        <!-- ================= CIVIC ================= -->
+        <section id="civic">
+            <h2>Honda Civic 2026</h2>
+
+            <figure>
+                <img src="civic.jpg" alt="Honda Civic 2026" title="Honda Civic" width="600">
+                <figcaption>Honda Civic 2026 — компактный автомобиль</figcaption>
+            </figure>
+
+            <p>
+                Civic — <strong>самый доступный</strong> автомобиль Honda в линейке.
+                Одиннадцатое поколение отличается современным дизайном, экономичностью
+                и отличной управляемостью. Выпускается с <time datetime="2021">2021 года</time>.
+            </p>
+
+            <h3>Безопасность Euro NCAP</h3>
+            <p>Общая оценка: <progress value="92" max="100"></progress> 92%</p>
+            <p>Защита взрослых: <progress value="89" max="100"></progress> 89%</p>
+            <p>Защита детей: <progress value="83" max="100"></progress> 83%</p>
+
+            <aside>
+                <h4>💡 Интересный факт</h4>
+                <p>
+                    Honda Civic — один из самых продаваемых автомобилей в мире.
+                    За 50 лет выпущено более 27 миллионов экземпляров.
+                    В Японии существует даже спортивная версия — Civic Type R.
+                </p>
+            </aside>
+
+            <blockquote>
+                <p>
+                    Civic доказывает, что недорогой автомобиль может быть
+                    интересным, экономичным и надёжным одновременно.
+                    Он задаёт стандарт в компактном классе.
+                </p>
+                <footer>— <cite>Top Gear</cite></footer>
+            </blockquote>
+
+            <details>
+                <summary>📋 Полные технические характеристики</summary>
+                <ul>
+                    <li>Двигатель: 2.0L гибрид e:HEV</li>
+                    <li>Мощность: 184 л.с.</li>
+                    <li>Расход: 4.2–6.2 л/100км</li>
+                    <li>Разгон 0–100: 8.1 сек</li>
+                    <li>Максимальная скорость: 180 км/ч</li>
+                    <li>Багажник: 410–820 л</li>
+                </ul>
+            </details>
+        </section>
+
+        <!-- ================= ГАЛЕРЕЯ ================= -->
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="accord1.jpg" alt="Honda Accord" style="width:100%; border-radius:10px;">
+                    <h4>Honda Accord</h4>
+                    <p>Флагманский седан</p>
+                </div>
+                <div class="card">
+                    <img src="crv1.jpg" alt="Honda CR-V" style="width:100%; border-radius:10px;">
+                    <h4>Honda CR-V</h4>
+                    <p>Семейный кроссовер</p>
+                </div>
+                <div class="card">
+                    <img src="civic1.jpg" alt="Honda Civic" style="width:100%; border-radius:10px;">
+                    <h4>Honda Civic</h4>
+                    <p>Компактный автомобиль</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ФОРМА ОБРАТНОЙ СВЯЗИ ================= -->
+        <section id="contact">
+            <h2>Свяжитесь с нами</h2>
+            <p>Оставьте отзыв о моделях Honda или задайте вопрос:</p>
+
+            <form>
+                <label>
+                    Ваше имя:
+                    <input type="text" placeholder="Введите имя" required>
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" placeholder="mail@example.com" required>
+                </label>
+
+                <label>
+                    Какую модель вы бы выбрали?
+                    <select style="width:100%; padding:12px; margin-top:6px; background:rgba(255,255,255,0.08); border:1px solid #4a9bd9; border-radius:10px; color:white; font-family:inherit; font-size:1em;">
+                        <option style="background:#1a3a5c;">Honda Accord</option>
+                        <option style="background:#1a3a5c;">Honda CR-V</option>
+                        <option style="background:#1a3a5c;">Honda Civic</option>
+                    </select>
+                </label>
+
+                <label>
+                    Ваш отзыв:
+                    <textarea rows="5" placeholder="Напишите ваш отзыв..."></textarea>
+                </label>
+
+                <button type="submit" class="btn">Отправить отзыв</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ================= ПОДВАЛ ================= -->
+    <footer>
+        <p><strong>Honda — обзор моделей 2026</strong></p>
+       
+        <p><small>© 2026 Все права защищены. Информация носит справочный характер.</small></p>
+        <p><a href="#intro">↑ Наверх</a></p>
+    </footer>
+<!-- ================= ПОМОЩНИК НАСТЮШКА ================= -->
+<div class="helper">
+
+    <!-- Скрытый чекбокс — управляет открытием/закрытием -->
+    <input type="checkbox" id="helperToggle" class="helper-toggle">
+
+   <label for="helperToggle" class="helper-avatar">
+    <img src="nastya1.jpg" alt="Настюшка">
+    <span class="helper-ping"></span>
+</label>
+
+    <!-- Окно чата -->
+    <div class="helper-window">
+        <div class="helper-header">
+            <div class="helper-header-info">
+                <div class="helper-header-avatar">
+    <img src="nastya1.jpg" alt="Настюшка">
+</div>
+                <div>
+                    <div class="helper-name">Настюшка</div>
+                    <div class="helper-status">● онлайн</div>
+                </div>
+            </div>
+            <label for="helperToggle" class="helper-close">✕</label>
+        </div>
+
+        <div class="helper-body">
+    <div class="helper-message">
+        Привет! 👋 Я Настюшка, помогу выбрать Honda.
+    </div>
+
+    <div class="helper-message">
+        Расскажу коротко о трёх моделях — выбирай, что тебе ближе:
+    </div>
+
+    <div class="helper-message helper-message-model">
+        🚗 <strong>Accord</strong> — флагманский седан. Самый быстрый и экономичный (4.3 л/100км). Идеален для трассы и бизнеса.
+    </div>
+
+    <div class="helper-message helper-message-model">
+        🚙 <strong>CR-V</strong> — семейный кроссовер. Самый вместительный (багажник до 1070 л). Лучший выбор для семьи.
+    </div>
+
+    <div class="helper-message helper-message-model">
+        🏎️ <strong>Civic</strong> — компактный автомобиль. Самый доступный (от ~$24,000). Отличный выбор для города и студентов.
+    </div>
+
+    <div class="helper-message">
+        Хочешь посмотреть подробнее? Жми на кнопку 👇
+    </div>
+
+    <div class="helper-message helper-message-options">
+        <a href="#accord">🚗 Про Accord</a>
+        <a href="#crv">🚙 Про CR-V</a>
+        <a href="#civic">🏎️ Про Civic</a>
+        <a href="#table">📊 Сравнить все</a>
+    </div>
+
+    <div class="helper-message helper-message-footer-note">
+        Если остались вопросы — напиши нам в форме внизу страницы 💌
+    </div>
+</div>
+
+</div>
+</body>
+</html>
